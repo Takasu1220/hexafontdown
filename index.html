@@ -1,2 +1,76 @@
-<h1>クリックしてダウンロード</h1>
-<a href="hexafont001.otf" download="hexafont001.otf">フォントのダウンロード</a>
+<style>
+  
+.text-header {
+  width: 100%;
+  background-color: #808080; 
+  padding: 20px 0;           
+  text-align: center;        
+  box-sizing: border-box;
+}
+
+/* 文字の設定 */
+.header-title {
+  color: #00bfff;            
+  margin: 0;                 
+  font-size: 24px;           
+}
+  </style>
+<header class="text-header">
+  <h1 class="header-title">高鷲-Takasu-の動画投稿部屋</h1>
+</header>
+<p>高鷲の撮影、制作した動画を張り付けていくサイトです。</p>
+<body>
+  <style>
+  .h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+}
+
+.h1::before {
+  content: attr(data-en);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #e0f2fe;
+  z-index: -1;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+  </style>
+    <style>
+  .h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+}
+
+.h2:before {
+  content: attr(data-en);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #e0f2fe;
+  z-index: -1;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+  </style>
+  <h1 data-en="All videos">動画</h1>
+  <h2 id="鉄道系" data-en="Railways">鉄道系動画</h2>
+  <video src="video.mp4" controls controlsList="nodownload" oncontextmenu="return false;" playsinline></video>
+  <h2 id="ゆっくり実況系" data-en="Yukkuri movies">ゆっくり実況動画</h2>
+  <video src="video.mp4" controls controlsList="nodownload" oncontextmenu="return false;" playsinline></video>
+</body>
